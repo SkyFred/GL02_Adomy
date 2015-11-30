@@ -6,4 +6,4 @@ if(require.main === module){
 	// We're being used as a library !
 	// Then we should expose our API
 	// module.exports = ...;
-}
+}//test
