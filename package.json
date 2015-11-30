@@ -1,0 +1,30 @@
+{
+  "name": "adomy",
+  "version": "1.0.0",
+  "description": "(GL02) A simple calendar library.",
+  "main": "app.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "node --harmony ./test/testrunner.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Meklo/GL02_Adomy.git"
+  },
+  "keywords": [
+    "calendar",
+    "iCal",
+    "csv"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Meklo/GL02_Adomy/issues"
+  },
+  "homepage": "https://github.com/Meklo/GL02_Adomy#readme",
+  "devDependencies": {
+    "qunit": "^0.7.7"
+  }
+}
