@@ -4,6 +4,8 @@ We should maybe write some documentation here to present the project, explain wh
 
 
 # Contributing
+Ajout de paramètres pour les fonctions ajouter et enlever pour le fichier pivot.
+
 'ical_Parser.js' ajout d'un symbole "$$" pour obtenir la fin de chier lors du parser.
 
 `app.js` contains the publicly available library (the API), `lib/` contains everything we'll use (iCal parser, ...) that should be kept private.
