@@ -14,6 +14,7 @@ Ajout de paramètres pour les fonctions ajouter et enlever pour le fichier pivot
 
 To run the tests suite, just run `npm test`.
 
-## License
+Framapad : Test "https://lite6.framapad.org/p/GL02_Oizos"
 
+## License
 MIT © GL02_Adomy team
