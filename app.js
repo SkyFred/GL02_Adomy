@@ -4,10 +4,10 @@ if(require.main === module){
 	// We're running as a cli app
 	
 	/*var csv = require('./lib/csv');
-	console.log(csv.parseFile(__dirname + '/test/data/sample.csv'));
+	console.log(csv.parseFile(__dirname + '/test/data/sample.csv'));*/
 
 	var ical = require('./lib/ical_Parser');
-	console.log(ical.parseFile(__dirname + '/test/data/sample.iCal'));*/
+	//Sconsole.log(ical.parseFile(__dirname + '/test/data/sample.iCal'));
 
     var EmploiDuTemps = require('./lib/emploi_du_temps');
 	var edt = new EmploiDuTemps("Michel");
