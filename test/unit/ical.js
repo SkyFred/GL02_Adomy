@@ -11,6 +11,5 @@ test("should fail, this is csv", function () {
     throws(function () {
         var ical = require('../../lib/ical_Parser.js');
         ical.parseFile(__dirname + '/../data/sample.csv');
-        throw 'error ...';
     }, 'should fail');
 });
