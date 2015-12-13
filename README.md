@@ -1,15 +1,21 @@
 # GL02_Adomy [![Build Status](https://secure.travis-ci.org/PunKeel/GL02_Adomy.svg?branch=master)](https://travis-ci.org/PunKeel/GL02_Adomy)
 
-##Utilisation
-
 <p>Ce repo contient l'implémentation des spécifications intitulées "flying_muffins_cc_1A.pdf", il vise à répondre au besoin de flexibilité dans la gestion des emplois du temps de l'association Adomy.</P>
 
+##Modifications cahier des charges
+
+<p>Selon le cahier des charges, le format pivot étaient un tableau de booléen de taille 7*48, nous avons gardé cette structure et l'avons l'enrichit afin de pouvoir répondre aux exigences demandées. Le format pivot est une classe du nom d'"EmploiDuTemps", elle contient un attribut "intervenant", un tableau appelé "interventions" et le tableau de booléens de taille 7*48 appelé "pdt". Cette modification a été effectuée car un tableau de booléen n'apporte pas assez d'informations en lui-même concernant le détail des interventions et sur l'identité des intervenants.</p>
+
+##Utilisation
+
 <p>Pour utiliser cette librairie, l'ensemble de l'API est disponible dans le fichier "app.js", elle rassemble les dépendances nécessaire au bon fonctionnement de la librairie. L'implémentation du format pivor se situe dans le fichier "/lib/emploi_du_temps.js", il contient les différentes opérations que l'on peut effectuer sur le format définit.</p>
+
+<p>Pour manipuler une variable du type "EmploiDutemps", vous devez à l'instanciation envoyer un paramètre "intervenant" au constructeur, cela permet de définir à quel intervenant cet emploi du temps est lié, l'attribut intervenant pourra aussi contenir un préfixe en fonction de la nature de l'emplois du temps, par exemple, s'il s'agit du complémentaire de l'emplois du temps, son attribut sera sous la forme "Complémentaire de "intervenant"".</br>Pour manipuler ce type, les fonctione ajouter et enlever sont définies comme dans le cahier des charges.</br>Vous pouvez de plus visualiser le tableau de booléen grâce à la fonction "afficherBoolean()"</p>
 
 <p>Fonctions disponibles répondant aux spécification du cahier des charges:</p>
 <ul>
 
-	<li>SPEC_01, fonctions "parseFile" du fichier "/lib/csv.js" ou "/lib/ical_Parser.js"</li>
+	<li>SPEC_01, fonctions "parseFile(fileToParse)" du fichier "/lib/csv.js" ou "/lib/ical_Parser.js"</li>
 	<li>SPEC_02, fonction "parseFile(fileToParse)" du fichier "/lib/ical_Parser.js", le paramètre représente le chemin absolu du fichier à parser</li>
 	<li>SPEC_03, fonction "parseFile(fileToParse)" du fichier "/lib/csv.js", le paramètre représente le chemin absolu du fichier à parser</li>
 	<li>SPEC_04, fonction "calculerIntersection(edt : EmploiDuTemps)" du fichier "/lib/emploi_du_temps.js", elle retourne un nouvel objet du type EmploiDuTemps dont les interventions corespond à l'intersection de celles de l'objet courant et de l'objet EmploiDuTemps passé en paramètre</li>
