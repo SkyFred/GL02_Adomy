@@ -9,7 +9,7 @@
 <p>Fonctions disponibles répondant aux spécification du cahier des charges:</p>
 <li>
 
-	<ul><p>- SPEC_01, fonctions "parseFile" du fichier "/lib/csv.js" ou "/lib/ical_Parser.js"</p></ul>
+	- SPEC_01, fonctions "parseFile" du fichier "/lib/csv.js" ou "/lib/ical_Parser.js"
 	- SPEC_02, fonction "parseFile(fileToParse)" du fichier "/lib/ical_Parser.js", le paramètre représente le chemin absolu du fichier à parser
 	- SPEC_03, fonction "parseFile(fileToParse)" du fichier "/lib/csv.js", le paramètre représente le chemin absolu du fichier à parser
 	- SPEC_04, fonction "calculerIntersection(edt : EmploiDuTemps)" du fichier "/lib/emploi_du_temps.js", elle retourne un nouvel objet du type EmploiDuTemps dont les interventions corespond à l'intersection de celles de l'objet courant et de l'objet EmploiDuTemps passé en paramètre
