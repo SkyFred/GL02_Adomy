@@ -12,15 +12,12 @@ if(require.main === module){
     var EmploiDuTemps = require('./lib/emploi_du_temps');
 	var edt = new EmploiDuTemps("Michel");
 
-	var edt2 = new EmploiDuTemps("Lucas");
+	edt.ajouter(0,46,5,"Mark","Jardiland");
+	edt.ajouter(1,0,3,null,"UTT");
 
-	edt2.ajouter(1,46,5,null,"Jardiland");
-	edt.ajouter(2,0,10,null,"UTT");
-	edt2.ajouter(2,5,10,null,"Jardiniere");
 
-	var edtUnion = edt.calculerIntersection(edt2);
+	var data = edt.exportCsv();
 
-	edt2.afficherBoolean();
 
 
 
