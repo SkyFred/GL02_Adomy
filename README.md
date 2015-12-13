@@ -1,6 +1,6 @@
 # GL02_Adomy [![Build Status](https://secure.travis-ci.org/PunKeel/GL02_Adomy.svg?branch=master)](https://travis-ci.org/PunKeel/GL02_Adomy)
 
-<p>Ce repo contient l'implémentation des spécifications intitulées "flying_muffins_cc_1A.pdf", il vise à répondre au besoin de flexibilité dans la gestion des emplois du temps de l'association Adomy.</P>
+<p>Ce repo contient l'implémentation des spécifications intitulées 'flying_muffins_cc_1A.pdf', il vise à répondre au besoin de flexibilité dans la gestion des emplois du temps de l'association Adomy.</P>
 
 ##Modifications cahier des charges
 
