@@ -28,7 +28,7 @@
 </ul>
 ##Parsing
 
-Afin d'importer des données existante, que se soit au format ".ics" ou ".csv", vous avez accès aux fichiers "/lib/csv.js" afin de parser et convertir les données contenues du format ".csv" au format établi dans "/lib/emploi_du_temps.js" et au fichier "/lib/ical_Parser.js" afin de parser et convertir les données contenues du format ".ics" au format établi dans "/lib/emploi_du_temps.js". Pour utiliser ces fichiers, importez tout d'abord celui que vous souhaitez exploiter avec 
+Afin d'importer des données existante, que se soit au format ".ics" ou ".csv", vous avez accès aux fichiers "/lib/csv.js" afin de parser et convertir les données contenues du format ".csv" au format établi dans "/lib/emploi_du_temps.js" et au fichier "/lib/ical_Parser.js" afin de parser et convertir les données contenues du format ".ics" au format établi dans "/lib/emploi_du_temps.js".</br>Pour utiliser ces fichiers, importez tout d'abord celui que vous souhaitez exploiter avec 
 le mot clé "require" puis appelez la fonction "parseFile(fileToParse)" du fichier, fileToParse étant le chemin du fichier que vous voulez parser, il suffit de stocker le résultat de cette fonction dans une variable, celle-ci pourra être utiliser comme un objet du type "EmploiDuTemps".
 
 ## Contributing
