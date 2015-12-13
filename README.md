@@ -4,7 +4,7 @@
 
 ##Modifications cahier des charges
 
-<p>Selon le cahier des charges, le format pivot étaient un tableau de booléen de taille 7*48, nous avons gardé cette structure et l'avons l'enrichit afin de pouvoir répondre aux exigences demandées. Le format pivot est une classe portant le nom "EmploiDuTemps", elle contient un attribut "intervenant", un tableau appelé "interventions" et le tableau de booléens de taille 7*48 appelé "pdt".</br> Cette modification a été effectuée car un tableau de booléen n'apporte pas assez d'informations en lui-même concernant le détail des interventions et sur l'identité des intervenants et ces informations sont pourtant nécessaires afin de répondre aux spécifications fonctionnelles formulées dans le cahier des charges.</p>
+<p>Selon le cahier des charges, le format pivot étaient un tableau de booléen de taille 7*48, nous avons gardé cette structure et l'avons l'enrichit afin de pouvoir répondre aux exigences demandées. Le format pivot est une classe portant le nom "EmploiDuTemps", elle contient un attribut "intervenant", un tableau appelé "interventions" et le tableau de booléens de taille 7*48 appelé "pdt".</br></br> Cette modification a été effectuée car un tableau de booléen n'apporte pas assez d'informations en lui-même concernant le détail des interventions et sur l'identité des intervenants et ces informations sont pourtant nécessaires afin de répondre aux spécifications fonctionnelles formulées dans le cahier des charges.</p>
 
 ##Utilisation
 
@@ -28,7 +28,7 @@
 </ul>
 ##Parsing
 
-Afin d'importer des données existante, que se soit au format ".ics" ou ".csv", vous avez accès aux fichiers "/lib/csv.js" afin de parser et convertir les données contenues du format ".csv" au format établi dans "/lib/emploi_du_temps.js" et au fichier "/lib/ical_Parser.js" afin de parser et convertir les données contenues du format ".ics" au format établi dans "/lib/emploi_du_temps.js".</br>Pour utiliser ces fichiers, importez tout d'abord celui que vous souhaitez exploiter avec 
+Afin d'importer des données existante, que se soit au format ".ics" ou ".csv", vous avez accès aux fichiers "/lib/csv.js" afin de parser et convertir les données contenues du format ".csv" au format établi dans "/lib/emploi_du_temps.js" et au fichier "/lib/ical_Parser.js" afin de parser et convertir les données contenues du format ".ics" au format établi dans "/lib/emploi_du_temps.js".</br></br>Pour utiliser ces fichiers, importez tout d'abord celui que vous souhaitez exploiter avec 
 le mot clé "require" puis appelez la fonction "parseFile(fileToParse)" du fichier, fileToParse étant le chemin du fichier que vous voulez parser, il suffit de stocker le résultat de cette fonction dans une variable, celle-ci pourra être utiliser comme un objet du type "EmploiDuTemps".
 
 ## Contributing
